@@ -242,7 +242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 770320659643366102}
   - component: {fileID: 1406478007369938476}
-  - component: {fileID: 7639316843862953320}
+  - component: {fileID: 3465968400653140866}
   m_Layer: 12
   m_Name: AtkArea (1)
   m_TagString: EnemyAtk
@@ -286,7 +286,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1, z: 1.29}
   m_Center: {x: 0, y: 0.53, z: 0.93}
---- !u!114 &7639316843862953320
+--- !u!114 &3465968400653140866
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -295,12 +295,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1504425664710627702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c44aadfb35cfd4397049aa625c996e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0caa7fecdd4b5f64784fc9b2e72d60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   weapon: 0
-  damage: 7
+  damage: 0
 --- !u!1 &2904611064501423750
 GameObject:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7147613917960304902}
   - component: {fileID: 6058309921113760507}
-  - component: {fileID: 2234068770615735547}
+  - component: {fileID: 3664844548471450077}
   m_Layer: 12
   m_Name: AtkArea
   m_TagString: EnemyAtk
@@ -419,7 +419,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.5, y: 1, z: 1.29}
   m_Center: {x: 0, y: 0.53, z: 0.93}
---- !u!114 &2234068770615735547
+--- !u!114 &3664844548471450077
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -428,12 +428,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3643323360069826870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c44aadfb35cfd4397049aa625c996e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0caa7fecdd4b5f64784fc9b2e72d60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   weapon: 0
-  damage: 5
+  damage: 0
 --- !u!1 &3818722934835584390
 GameObject:
   m_ObjectHideFlags: 0
@@ -443,7 +443,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7879922992986761484}
-  - component: {fileID: 2663348542392453974}
+  - component: {fileID: 5188874615277840676}
   - component: {fileID: 6040542092610482872}
   m_Layer: 5
   m_Name: HpBar
@@ -474,7 +474,7 @@ RectTransform:
   m_AnchoredPosition: {x: -0.000030965, y: 44.1}
   m_SizeDelta: {x: 52, y: 9}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2663348542392453974
+--- !u!114 &5188874615277840676
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3818722934835584390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799f15cc20c74b243972f34c9be1ae84, type: 3}
+  m_Script: {fileID: 11500000, guid: 13b0ab061b4b4bd4d825cc546221ddf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &6040542092610482872
@@ -788,8 +788,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7498142190150400792}
   - component: {fileID: 8035681660144644490}
-  - component: {fileID: 2094923301937233978}
-  - component: {fileID: -957623559320414028}
+  - component: {fileID: 4561967738975877363}
+  - component: {fileID: 7411227928076049059}
   - component: {fileID: 5676559294877977127}
   - component: {fileID: 8369228916326438678}
   - component: {fileID: 9084895860889491240}
@@ -837,7 +837,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2094923301937233978
+--- !u!114 &4561967738975877363
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -846,10 +846,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7153141402127884706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e966e8084f3d7478c4c5979696ca06, type: 3}
+  m_Script: {fileID: 11500000, guid: 65ff3fdb68158244db859a15525874b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-957623559320414028
+--- !u!114 &7411227928076049059
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -858,32 +858,27 @@ MonoBehaviour:
   m_GameObject: {fileID: 7153141402127884706}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 495142afbb0735440b23041a24a0caf4, type: 3}
+  m_Script: {fileID: 11500000, guid: a2ffa7098684e034ea54cf5bbfc11237, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 1
+  id: 0
   level: 0
   center: {fileID: 0}
   defaultLayer: 0
   nonTargettedLayer: 0
-  hpBar: {fileID: 2663348542392453974}
-  maxHP: 20
-  crtHP: 0
-  initialWaitTime: 2
-  monsterAtkPtns:
-  - {fileID: 2234068770615735547}
-  - {fileID: 7639316843862953320}
+  hpBar: {fileID: 0}
+  maxHP: 0
+  initialWaitTime: 0
+  monsterAtkPtns: []
   targetTag: 
   crtAtkPtn: 0
-  afterAtkDelay: 2
-  reactDistance: 7
-  dieDelay: 5
+  afterAtkDelay: 0
+  reactDistance: 0
+  dieDelay: 0
   monsterDead:
     m_PersistentCalls:
       m_Calls: []
-  targettingInfo:
-  - {x: 0.7, y: 1}
-  - {x: 0.7, y: 1.5}
+  targettingInfo: []
 --- !u!195 &5676559294877977127
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/PermanentScene.unity
+    guid: af9bc7bbf7b37454abb30f3fbb47106a
+  - enabled: 1
+    path: Assets/Scenes/LoadingScene.unity
+    guid: 1cb50e8a2da705348afa5155f5e2f454
+  - enabled: 1
+    path: Assets/Scenes/Village.unity
+    guid: 2c470afe328e053499a2c8efe8a9191f
+  - enabled: 1
+    path: Assets/Scenes/NorthernMeadows.unity
+    guid: e874bed3db5fe5940af4b22e12800cf3
   m_configObjects: {}

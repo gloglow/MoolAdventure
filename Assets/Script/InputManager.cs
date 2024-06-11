@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-    public static InputManager instance = null;
-
     //　プレイヤー入力関連
     public InputKey Forward = new InputKey(KeyCode.W);
     public InputKey Back = new InputKey(KeyCode.S);
@@ -25,19 +23,6 @@ public class InputManager : MonoBehaviour
     public float verticalAxis = 0;
     public float mouseRotationY;
     public float lastMouseRotationY;
-
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else if (instance != this)
-        {
-            Destroy(gameObject);
-        }
-    }
 
     private void Update()
     {

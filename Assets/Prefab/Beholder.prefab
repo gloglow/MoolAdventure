@@ -448,7 +448,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695502807786733843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53e966e8084f3d7478c4c5979696ca06, type: 3}
+  m_Script: {fileID: 11500000, guid: 65ff3fdb68158244db859a15525874b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &9052598948162566812
@@ -460,40 +460,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 1695502807786733843}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c24c20b3da0b24ca1978b73b39eced, type: 3}
+  m_Script: {fileID: 11500000, guid: 2308fc4e1c92a4c4abf118ba86c0fcd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 2
+  id: 0
   level: 0
-  center: {fileID: 4100691993815343103}
+  center: {fileID: 0}
   defaultLayer: 0
   nonTargettedLayer: 0
-  hpBar: {fileID: 6284018960951229744}
-  maxHP: 100
-  crtHP: 0
-  initialWaitTime: 2
-  monsterAtkPtns:
-  - {fileID: 1764406262834382639}
-  - {fileID: 6085364430287493537}
-  - {fileID: 3845371504981444365, guid: 18eb9566a826e0149a24d31b586138c4, type: 3}
+  hpBar: {fileID: 0}
+  maxHP: 0
+  initialWaitTime: 0
+  monsterAtkPtns: []
   targetTag: 
   crtAtkPtn: 0
-  afterAtkDelay: 2
-  reactDistance: 4
-  dieDelay: 4
+  afterAtkDelay: 0
+  reactDistance: 0
+  dieDelay: 0
   monsterDead:
     m_PersistentCalls:
       m_Calls: []
-  prefabBullet: {fileID: 8103132835759990987, guid: 18eb9566a826e0149a24d31b586138c4,
-    type: 3}
-  bulletCnt: 10
-  bulletParent: {fileID: 4100691993815343103}
-  atkPtnDistance: 6
-  targettingInfo:
-  - {x: 0.7, y: 1}
-  - {x: 0.7, y: 1.5}
-  - {x: 3, y: 5}
-  bulletGap: 0.5
+  prefabBullet: {fileID: 0}
+  bulletCnt: 0
+  bulletParent: {fileID: 0}
+  atkPtnDistance: 0
+  targettingInfo: []
+  bulletGap: 0
 --- !u!136 &5970122402423394911
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -1797,6 +1789,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4100691993815343103}
+  - component: {fileID: 1584715382247990420}
   m_Layer: 9
   m_Name: Bullets
   m_TagString: Untagged
@@ -1819,6 +1812,24 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1569666281374195111}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1584715382247990420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2532045992207171365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 861a32d10b94b6349b5d926187086ffc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  type: 0
+  weapon: 0
+  damage: 0
+  dirVec: {x: 0, y: 0, z: 0}
+  spd: 0
+  duration: 0
 --- !u!1 &3778469927932984438
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,12 +1893,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3778469927932984438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c44aadfb35cfd4397049aa625c996e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0caa7fecdd4b5f64784fc9b2e72d60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   weapon: 0
-  damage: 5
+  damage: 0
 --- !u!1 &4887274574585721881
 GameObject:
   m_ObjectHideFlags: 0
@@ -1937,7 +1948,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4887274574585721881}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799f15cc20c74b243972f34c9be1ae84, type: 3}
+  m_Script: {fileID: 11500000, guid: 13b0ab061b4b4bd4d825cc546221ddf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7291077602342347841
@@ -2204,12 +2215,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6537323029223024675}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5c44aadfb35cfd4397049aa625c996e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0caa7fecdd4b5f64784fc9b2e72d60a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
   weapon: 0
-  damage: 8
+  damage: 0
 --- !u!1 &7506187581696200030
 GameObject:
   m_ObjectHideFlags: 0

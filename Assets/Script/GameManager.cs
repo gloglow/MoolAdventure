@@ -1,27 +1,34 @@
+using Cinemachine.Utility;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance = null;
+    public static GameManager Instance = null;
+    public static InputManager inputManager;
+    public static SceneLoader sceneLoader;
+
+    public GameObject playerCharacter;
+
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
-        else if (instance != this)
+        else if (Instance != this)
         {
             Destroy(gameObject);
         }
-    }
 
-    public void MoveScene(int sceneNum)
+        inputManager = GetComponent<InputManager>();
+        sceneLoader = GetComponent<SceneLoader>();
+    }
+    private void Start()
     {
-        SceneManager.LoadScene(sceneNum);
+        sceneLoader.LoadScene();
     }
 }

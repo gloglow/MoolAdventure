@@ -21,7 +21,8 @@ public class Portal : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        GameManager.instance.MoveScene(sceneNum);
+        GameManager.sceneLoader.nextSceneNum = sceneNum;
+        GameManager.sceneLoader.LoadScene();
     }
 
     public void OffPortal()

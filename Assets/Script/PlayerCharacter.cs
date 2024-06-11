@@ -13,7 +13,7 @@ public class PlayerCharacter : Controller
 
     private void Start()
     {
-        inputManager = InputManager.instance;
+        inputManager = GameManager.inputManager;
 
     }
 
